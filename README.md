@@ -6,6 +6,10 @@ This project, extends the angular material modal to add some features:
 * You can add modals to the list and choose what modal want to see.
 * You can remove any modal from the list.
 
+## Git repository
+
+https://github.com/PabloMarzoa/pm-modal
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
