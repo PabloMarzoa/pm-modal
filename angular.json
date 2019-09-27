@@ -134,6 +134,41 @@
           }
         }
       }
+    },
+    "pm-modal": {
+      "root": "projects/pm-modal",
+      "sourceRoot": "projects/pm-modal/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/pm-modal/tsconfig.lib.json",
+            "project": "projects/pm-modal/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/pm-modal/src/test.ts",
+            "tsConfig": "projects/pm-modal/tsconfig.spec.json",
+            "karmaConfig": "projects/pm-modal/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/pm-modal/tsconfig.lib.json",
+              "projects/pm-modal/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "pm-modal-project"
