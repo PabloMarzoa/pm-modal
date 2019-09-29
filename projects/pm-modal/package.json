@@ -1,12 +1,12 @@
 {
   "name": "pm-modal",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "Pablo Marzoa López de Pablo",
     "email": "pablomarzoalopez@gmail.com"
   },
   "peerDependencies": {
-    "@angular/common": "^7.2.0",
-    "@angular/core": "^7.2.0"
+    "@angular/common": "~8.2.5",
+    "@angular/core": "~8.2.5"
   }
 }
